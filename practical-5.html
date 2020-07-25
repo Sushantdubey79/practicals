@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-5 | ImageMap </title>
+    <style>
+
+        .heading p{
+            text-align: center;font-size: 36px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: red;
+
+        }
+    
+        
+        .image-map{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+  
+        }
+    
+    </style>
+</head>
+
+<body style="background-color: rgb(134, 222, 255);">
+    <div >
+        <img src="menu.png" alt="imagemap menu "  usemap="#workmap" style="width:100%;" >
+        <map name="workmap">
+            <area shape="rect" coords="228,7,8,78" alt="home" href="index.html">
+            <area shape="rect" coords="233,8,484,74" alt="practical-1" href="project1.html">
+            <area shape="rect" coords="754,5,482,78"  alt="practical-2" href="practical-2.html">
+            <area shape="rect" coords="1022,6,758,75" alt="practical-3" href="practical-3.html">
+            <area shape="rect" coords="1272,6,1024,77" alt="practical-4" href="practical-4.html">
+            <area shape="rect" coords="1274,6,1522,77" alt="practical-5" href="practical-5.html">
+          </map>
+    </div>
+    <div class="heading">
+<p>Introduction <br> to <br><strong>Front2End Technologies</strong> </p>
+    </div>
+    <div  >
+   
+        <img src="Practical-5.jpg" class="image-map" usemap="#tech">
+        <map name="tech">
+            <area shape="rect" coords="18,9,170,165" alt="html" href="About_html.html">
+            <area shape="rect" coords="23,196,170,336" alt="js" href="About_jss.html">
+            <area shape="poly" coords="288,201,346,222,337,300,288,328,239,299,230,224" alt="bootstrap" href="about_bootstrap.html">
+            <area shape="circle" coords="286,96,98" alt="css" href="About_css.html">
+        </map>
+        <p style="color: red;text-align: center;">Click any part of logo to know about these</p>
+    
+</body>
+</html>
