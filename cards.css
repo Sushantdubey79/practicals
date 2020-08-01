@@ -1,0 +1,48 @@
+.para{
+	font-family: Arial;
+}
+h3{
+	text-align: center;
+}
+h1{
+	color: white;
+	font-size: 2rem;
+}
+body{
+	background-color: gray;
+}
+.row{
+	margin: 20px 0 0 30px;
+}
+.column {
+	border: 1px solid white;
+
+	border-radius: 7px;
+	background-color: white;
+	float: left;
+    width: 20%;
+    margin: 20px 10px 0 40px;
+    display: inline-block;
+}
+.card{
+	padding: 16px;
+}
+.card img{
+	width: 265px;
+	height: 170px;
+	border-radius: 7px;
+}
+.button:hover{
+	background-color: blue;
+}
+.button {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
