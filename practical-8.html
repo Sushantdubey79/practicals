@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        #header{
+            margin: 100px 10px 10px 10px;
+        }
+        .header {
+            background-color: gray;
+            height: 80px;
+            position: fixed;
+            top: 0;
+            width :100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .header a{
+            padding: 15px;
+            color: white;
+            margin: 0 60px 0 60px;
+            border-radius: 1px;
+        }
+        .header a:hover{
+
+            background-color: white;
+            color: black;
+        }
+        #banner{
+            margin: 10px 10px 10px 10px;
+        }
+        .banner {
+            background-image: url(banner.jpg);
+            height: 800px;
+            padding: 20px 0 0 20px;
+            font-size: 60px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #section-1{
+            margin: 100px 10px 10px 10px;
+        }
+        .section-1 {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            display: block;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            float: left;
+            margin: 10px 20px;;
+            width: 220px;
+            height: 220px;
+            padding: 20px;
+            border-radius: 50%;
+        }
+        #section-2{
+            margin: 100px 10px 10px 10px;
+        }
+        .section-2 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .section-2:after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+        .left-side {
+            width: 50%;
+            background-color: gray;
+            height: 500px;
+            float: left;
+            font-size: 30px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .right-side {
+            width: 48%;
+            height: 500px;
+            float: right;
+            font-size: 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .articles {
+            height: 161px;
+            width: 100%;
+            margin-bottom: 8px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #section-3{
+            margin: 100px 10px 10px 100px;
+        }
+
+        
+        .para{
+        font-family: Arial;
+    }
+    h3{
+        text-align: center;
+    }
+    .section-3 h1{
+        color: white;
+        font-size: 2rem;
+    }
+    .row{
+        margin: 20px 0 0 30px;
+    }
+    .column {
+        border: 1px solid white;
+
+        border-radius: 7px;
+        background-color: lightgray;
+        float: left;
+        width: 20%;
+        margin: 20px 10px 100px 40px;
+        display: inline-block;
+    }
+    .card{
+        padding: 16px;
+    }
+    .card img{
+        width: 100%;
+        height: 170px;
+        border-radius: 7px;
+    }
+    .button:hover{
+        background-color: blue;
+    }
+    .button {
+      background-color: red; 
+      border: none;
+      color: white;
+      width: 100%;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+}
+      #footer{
+            margin: 150px 10px 10px 10px;
+        }
+
+        .footer {
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 20px;
+            background-color: pink;
+            height: 150px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="header">
+            <div class="header">
+                <a href="#">Home</a>
+                <a href="#section-2">About us</a>
+                <a href="#section-1">Team</a>
+                <a href="#section-3">Technologies</a>
+                <a href="#footer">Contact</a>
+            </div>
+        </div>
+        <div id ="banner">
+            <div class="banner">
+                Practical-8
+            </div>
+        </div>
+        <div id="section-1">
+            <h1 style="text-align: center; font-size: 3rem;">Team</h1>
+        </div>
+            <div class="section-1">
+            <img class="circle"  src="team1.png" alt="">
+            <img class="circle"  src="team2.png" alt="">
+            <img class="circle"  src="team3.png" alt="">
+            <img class="circle"  src="team4.png" alt="">
+            </div>
+
+        <div id="section-2">
+            <h1 style="text-align: center; font-size: 3rem;">About us</h1>
+        </div>
+            <div class="section-2">
+                <div class="left-side">
+                    <div class="main-content">
+                        <h1 style=" font-size: 3rem; padding-bottom: 20px">About Project</h1>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                </div>
+                <div class="right-side">
+                    <div class="articles" style="background-image: url('p1.jpg');"> Project-1</div>
+                    <div class="articles" style="background-image: url('p2.jpeg');">Project-2</div>
+                    <div class="articles" style="background-image: url('p3.jpg');">Project-3</div>
+                    </div>
+            </div>
+        
+        <div id="section-3">
+            <h1 style="text-align: center; font-size: 3rem;">Technologies used</h1>
+        </div>
+            <div class="section-3">
+                <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="introtohtml.png">
+                <h3>Introduction to html</h3>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="About_html.html">
+                <button class="button">Read more</button>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="introtocss.png">
+                <h3>Introduction to css</h3>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="button">Read more</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="jquery.jpg">
+                <h3>Introduction to jquery</h3>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="button">Read more</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="introtobootstrap.png">
+                <h3>Introduction to bootstrap</h3>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="button">Read more</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+        
+        <div id="footer">
+            <h1 style="text-align: center; font-size: 3rem;">Contact</h1>
+        </div>
+        <div class="footer">
+            Website Temeplete for Practical-8 &copy; <a
+                href="https://github.com/sushantdubey79/practicals">GitHub/sushantdubey79</a>
+            <br>
+            <br>
+            <a href="">Back To top</a>
+        </div>
+    
+    </div>
+</body>
+
+</html>
