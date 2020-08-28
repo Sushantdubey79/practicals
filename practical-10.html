@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>sidenav</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: white;
+        }
+        .row{
+            width: 100%;
+            height: 70px;
+            background-color: steelblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+        }
+        .row h1{
+            color: white;
+            font-size: 50px;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: justify;
+            margin-top: 20px;
+            color: steelblue;
+        }
+        .social {
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 40px;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            padding-right: 40px;
+            padding-bottom: 60px;
+        }
+        .a{
+
+            font-size: 25px;
+            color: white;
+            position: fixed;
+            top: 20px;
+            left: 35px;
+        }
+        input{
+            display: none;
+        }
+        .ban img{
+            display: block;
+            width: 100%;
+            margin: auto;
+            max-width: 600px;
+            padding-top: 100px;
+        }
+        .ban{
+            width: 100%;
+            padding: 20px;
+        }
+        .hell{
+                position: fixed;
+                background-color: steelblue;
+                top: 0;
+                left: -20%;
+                text-align: left;
+                width: 20%;
+                height: 100vh;
+                transition: all 0.3s;
+            }
+            .hell a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                margin-top: 60px;
+                transition: all 0.2s;
+            }
+
+            .hell label i{
+                font-size: 35px;
+                color: white;
+                margin-top: 15px;
+                margin-left: 30px;
+            }
+            .hell a i{
+                margin-left: 5px;
+            }
+            span{
+                margin-left: 6px;
+            }
+            .hell a:hover {
+            border-left: 7px solid #fff;
+        }
+            .ph{
+                border-bottom: 2px solid white;
+            }
+            #id:checked ~ .hell{
+                left: 0;
+            }
+            #id:checked ~ .ban{
+                width: 80%;
+                float: right;
+            }
+            @media (max-width: 768px) {
+            #id:checked ~ .hell {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <h1>Fullstack</h1>
+    </div>
+    <input type="checkbox" id="id">
+    <label for="id" class="a"><i class="fa fa-bars fa-lg"></i></label>
+
+    <div class="hell">
+            <label for= "id" class="b"><i class="fa fa-times"></i></label>
+            <div class="ph">
+            <a href="#"><i class="fa fa-home fa-sm"></i><span>Home</span></a>
+            </div>
+            <div class="ph">
+            <a href="#section-2"><i class="fa fa-user"></i><span>About us</span></a>
+            </div>
+            <div class="ph">
+            <a href="#section-1"><i class="fa fa-tasks"></i><span>Team</span></a>
+            </div>
+            <div class="ph">
+            <a href="#section-3"><i class="fa fa-rss"></i><span>Technology</span></a>
+            </div>
+            <div class="ph">
+            <a href="#contact"><i class="fa fa-id-card"></i><span>Contact</span></a>
+            </div>
+            
+        <div class="social">
+            <a href=""><i class="fa fa-facebook-square"></i></a>
+            <a href=""><i class="fa fa-youtube-square"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+        </div>
+    
+    <div class="ban" id="id">
+        <img src="banner.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</body>
+</html>
